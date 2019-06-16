@@ -169,3 +169,9 @@ bran[8].innerHTML = 'Adidas Originals';
 item[6].innerHTML = 'NMD R1 Shoes';
 pri[7].innerHTML = '$140.00';
 discount[7].innerHTML = "20% OFF on Father's day!";
+
+
+// fixed broken gin picture
+pic[2].src = 'https://www.totalwine.com/media/sys_master/twmmedia/h57/ha4/8807969325086.png'
+pic[2].style.height= '250px'
+pic[2].style.width = '250px'
