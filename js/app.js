@@ -18,11 +18,11 @@ document.getElementById('price1').innerHTML= '$8.99'
 //5. Target the button element with the id of 'discount1' and update the content to Free fries with purchase!
 document.getElementById('discount1').innerHTML = 'Free fries with purchase!'
 //6. Create a div element with the id of 'item2' and update the content to Hendrick's Gin. Append this element to William Grand & Sons div.
-var hng= document.querySelector('#brand2')
-var newDiv= document.createElement('div')
-newDiv.setAttribute('id',"item2")
-newDiv.innerHTML = "Hendrick's Gin"
-    hng.appendChild(newDiv)
+var hng= document.querySelector('#brand2');
+var newDiv= document.createElement('div');
+newDiv.setAttribute('id',"item2");
+newDiv.innerHTML = "Hendrick's Gin";
+    hng.appendChild(newDiv);
 //7. Create a div element with the id of 'price2' and update the content to $34.99. Append this element to the Hendrick's Gin div.
 
 var p2 = document.createElement('div');p2.setAttribute('id','price2');
@@ -97,10 +97,10 @@ discount[3].innerHTML = 'Free knee-high tub socks with purchase'
 //div.item =  Poppin' Jalapeno Doritos
 //div.price = $7.77
 // button.discount = 33% OFF any 6 pack Budweiser or Bud Light.
-discount[4].innerHTML = '33% OFF any 6 pack Budweiser or Bud Light.'
-item[3].innerHTML = "Poppin' Jalapeno Doritos"
-bran[5].innerHTML = 'Frito Lay'
-pri[4].innerHTML = "$7.77"
+discount[4].innerHTML = '33% OFF any 6 pack Budweiser or Bud Light.';
+item[3].innerHTML = "Poppin' Jalapeno Doritos";
+bran[5].innerHTML = 'Frito Lay';
+pri[4].innerHTML = "$7.77";
 
 //19. For the Pug, change the contents for each element to the following:
 //div.brand = Any Dog Breeder
@@ -108,21 +108,64 @@ pri[4].innerHTML = "$7.77"
 //div.price = Priceless
 // button.discount = No Discounts. This cutie is worth every penny!
 
-item[4].innerHTML = "Baby Puggy"
-bran[6].innerHTML = "Any Dog Breeder"
-discount[5].innerHTML= "No Discounts. This cutie is worth every penny!"
-pri[5].innerHTML = "Priceless"
+item[4].innerHTML = "Baby Puggy";
+bran[6].innerHTML = "Any Dog Breeder";
+discount[5].innerHTML= "No Discounts. This cutie is worth every penny!";
+pri[5].innerHTML = "Priceless";
 //Final Boss 
 //Create your own product for the last three sections.
-var pic = document.getElementsByTagName('img')
-pic[10].src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj_46XFxOYM8l_r-w165rPIxMsMaFiHXEvfSRpyvK74fH-fhUZEQ"
+var pic = document.getElementsByTagName('img');
+pic[10].src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj_46XFxOYM8l_r-w165rPIxMsMaFiHXEvfSRpyvK74fH-fhUZEQ";
 pic[10].onclick = function(){
     window.location.href = "https://tickets.meowwolf.com/#/event-details/admission-tickets"
-}
-pic[10].style.height = '250px'
-pic[10].style.width = '250px'
-item[5].innerHTML = "Interactive Art Mueseum Tickets"
-bran[7].innerHTML = "Meow Wolf"
-pri[6].innerHTML = "$29 For Adults, $21 For Children"
-discount[6].innerHTML = "Discounts only avalible to local residents."
-console.log(pic)
+};
+pic[10].style.height = '250px';
+pic[10].style.width = '250px';
+item[5].innerHTML = "Interactive Art Mueseum Tickets";
+bran[7].innerHTML = "Meow Wolf";
+pri[6].innerHTML = "$29 For Adults, $21 For Children";
+discount[6].innerHTML = "Discounts only avalible to local residents.";
+
+pic[12].style.height = '250px';
+pic[12].style.width = '250px';
+pic[12].src = "https://pbs.twimg.com/media/CmmdHlTUEAAm31I.jpg";
+pic[12].onclick = function(){
+    window.location.href = "https://tenor.com/search/catch-these-hands-gifs"
+};
+
+let handBrand = document.createElement('div');handBrand.setAttribute('class','brand');
+let hand = document.createElement('div'); hand.setAttribute('class','item');
+let handPrice = document.createElement('div'); handPrice.setAttribute('class','price');
+let handDiscount = document.createElement('button'); handDiscount.setAttribute('class','discount');
+get[3].appendChild(handBrand);
+get[3].appendChild(hand);
+get[3].appendChild(handPrice);
+get[3].appendChild(handDiscount)
+item[6].innerHTML = "These Hands";
+bran[8].innerHTML = "Brought to you by Me";
+pri[7].innerHTML = "For Free";
+discount[7].innerHTML = "Two for one Special";
+
+let get2 = document.getElementsByClassName('block2')
+
+pic[11].src = 'https://images.footlocker.com/is/image/EBFL2/EF1734_a1?wid=630&hei=630&fmt=png-alpha';
+pic[11].onclick = function(){
+    window.location.href = 'https://www.champssports.com/product/adidas-originals-nmd-r1-mens/EF1734.html'
+};
+pic[11].style.height = '250px';
+pic[11].style.width = '250px';
+
+let shoeBrand = document.createElement('div'); shoeBrand.setAttribute('class','brand');
+let shoe = document.createElement('div'); shoe.setAttribute('class','item');
+let shoePrice = document.createElement('div'); shoePrice.setAttribute('class','price');
+let shoeDiscount = document.createElement('button'); shoeDiscount.setAttribute('class','discount');
+
+get2[3].appendChild(shoeBrand);
+get2[3].appendChild(shoe);
+get2[3].appendChild(shoePrice);
+get2[3].appendChild(shoeDiscount);
+
+bran[8].innerHTML = 'Adidas Originals';
+item[6].innerHTML = 'NMD R1 Shoes';
+pri[7].innerHTML = '$140.00';
+discount[7].innerHTML = "20% OFF on Father's day!";
